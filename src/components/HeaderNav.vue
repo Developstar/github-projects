@@ -4,7 +4,7 @@
       <router-link to="/">MyGit</router-link>
     </div>
     <div class="navigation">
-      <ul>
+      <ul class="pagelinks">
         <li>
           <router-link to="/">Home</router-link>
         </li>
@@ -16,4 +16,19 @@
     </div>
     </nav>
 </template>
+
+<style>
+
+.nav_wrapper{
+  background: blue;
+  display: flex;
+  gap: 50%;
+}
+
+.pagelinks{
+  display: flex;
+  gap: 5rem;
+}
+
+</style>
 
