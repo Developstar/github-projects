@@ -8,22 +8,11 @@
         <li class="repoWrapper" v-for="repo in displayedRepos" :key="repo.id">
           <div><h3>{{ repo.name }}</h3></div>
           
-          <!-- <a :href="repo.html_url">{{ repo.name }}</a> -->
-          <!-- <router-link :to="{ name: 'RepoDetails', params: { id: repo.id }, query: { page: currentPage } }">
-          check More details
-        </router-link> -->
         <div >
-          <button class="viewButton">
-                    <router-link style="text-decoration: none; "
-            :to="{
-              name: 'RepoDetails',
-              params: { id: repo.id },
-              query: { page: currentPage },
-            }"
-          >
-            View
-          </router-link>
-        </button>
+          <router-link :to="{ name: 'RepoDetails', params: { repoId: repo.id }}">
+  Repository Details
+</router-link>
+
       </div>
 
 
@@ -97,7 +86,7 @@ export default {
     };
   },
   mounted() {
-    console.log(this.$route.params.id);
+ 
     axios
       .get("https://api.github.com/users/Developstar/repos")
       .then((response) => {
@@ -142,6 +131,13 @@ export default {
         console.error(error);
       }
     },
+
+    showDetails(repo) {
+      this.$router.push({
+        name: 'repository-details',
+        params: { repoId: repo.id }
+      })
+    }
   },
 };
 </script>
