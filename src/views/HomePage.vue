@@ -84,7 +84,7 @@
     box-shadow: 5px 5px 6px 3px rgba(0, 0, 0, 0.8);
     margin-top: 10vh;
     width: 80vw;
-    height: 78vh;
+    height: 60vh;
     position: relative;
   }
 
