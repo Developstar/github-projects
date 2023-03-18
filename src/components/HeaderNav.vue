@@ -38,5 +38,12 @@ li{
   gap: 5rem;
 }
 
+@media (min-width:320px) and (max-width:480px){
+  .nav_wrapper{
+  gap: 10%;
+  width: 100vw;
+}
+}
+
 </style>
 

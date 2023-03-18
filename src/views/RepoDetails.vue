@@ -67,4 +67,17 @@ export default {
 .backbtn {
   margin-top: 1rem;
 }
+
+
+@media (min-width:320px) and (max-width:480px){
+ .textdiv h1{
+  font-size: 1.1rem;
+  margin-left: -1.5rem;
+ }
+
+ .title{
+  font-size: 0.6rem;
+ }
+}
+ 
 </style>

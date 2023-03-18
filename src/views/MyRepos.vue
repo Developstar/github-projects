@@ -199,4 +199,23 @@ button {
 .repoDetailsbutton {
   margin-top: 0.1rem;
 }
+
+
+
+@media (min-width:320px) and (max-width:480px){
+ .pageTitle{
+  font-size: 1rem;
+ }
+
+ .repoName{
+  font-size: 0.8rem;
+ }
+
+ .pagination {
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+}
+
 </style>
