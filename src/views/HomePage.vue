@@ -101,6 +101,11 @@
     
   }
 
+  .repoButton{
+    position: absolute;
+    bottom: 0.9rem;
+  }
+
   h4{
     font-size: 0.7rem;
   }
@@ -114,6 +119,10 @@
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
+  }
+
+  h2{
+    font-size: 1rem;
   }
   }
   </style>
