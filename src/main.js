@@ -20,24 +20,14 @@ const router = createRouter({
         path: "/MyRepos",
         name: "MyRepos",
         component: MyRepos,
-        children: [
-            {
-                path: '/repo/:id',
-                name: 'RepoDetails',
-                component: RepoDetails,
-                props: (route) => ({ 
-                    id: Number(route.params.id),
-                    page: route.query.page || 1,
-                  }),
-              }
-      
-        ]
-        
     },
 
-
-    
-    
+    {
+        path: '/MyRepos/:repoId',
+        name: 'RepoDetails',
+        component: RepoDetails,
+        props: true
+    }
 ]
 
 })
