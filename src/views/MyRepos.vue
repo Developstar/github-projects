@@ -1,21 +1,21 @@
 <template>
-  <div>
+  <div >
     <h1 class="pageTitle">My GitHub Repositories</h1>
-    <div >
-      
+    <div>
       <ul class="singleWrapper">
-        
         <li class="repoWrapper" v-for="repo in displayedRepos" :key="repo.id">
-          <div><h3>{{ repo.name }}</h3></div>
-          
-        <div >
-          <router-link :to="{ name: 'RepoDetails', params: { repoId: repo.id }}">
-  Repository Details
-</router-link>
+          <div class="repoName">
+            <h3>{{ repo.name }}</h3>
+          </div>
 
-      </div>
-
-
+          <div class="repoDetailsbutton">
+            <router-link
+              :to="{ name: 'RepoDetails', params: { repoId: repo.id } }"
+            >
+            <button class="mrepobtn">View</button>
+              
+            </router-link>
+          </div>
         </li>
       </ul>
     </div>
@@ -86,7 +86,6 @@ export default {
     };
   },
   mounted() {
- 
     axios
       .get("https://api.github.com/users/Developstar/repos")
       .then((response) => {
@@ -134,30 +133,40 @@ export default {
 
     showDetails(repo) {
       this.$router.push({
-        name: 'repository-details',
-        params: { repoId: repo.id }
-      })
-    }
+        name: "repository-details",
+        params: { repoId: repo.id },
+      });
+    },
   },
 };
 </script>
 
 <style>
 
+
+
+
+h3 {
+  padding: 1rem;
+}
+
+/* .repoName {
+  margin-top: 1rem;
+} */
 .pageTitle{
-  margin-top: 2rem;
+ margin-top: 1rem;
 }
 
 .repoWrapper {
   background: #ffffff;
-  margin-top: 2rem;
+  box-shadow: 5px 5px 6px 3px rgba(0, 0, 0, 0.8);
+  margin-top: 1rem;
   margin-bottom: 2rem;
   width: 50%;
-  height: 6rem;
-  
+  height: 7rem;
 }
 
-.viewButton{
+.viewButton {
   background: #dbdde0;
   width: 5rem;
   margin-top: 2rem;
@@ -172,8 +181,22 @@ export default {
   position: relative;
 } */
 
-button{
+button {
   padding: 10px;
+}
+
+.mrepobtn{
+  width: 6rem;
+  border-radius: 4px;
+}
+
+.repoDetailsbutton a {
+  text-decoration: none;
+  
  
+}
+
+.repoDetailsbutton {
+  margin-top: 0.1rem;
 }
 </style>
