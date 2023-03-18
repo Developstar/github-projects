@@ -162,8 +162,8 @@ h3 {
   box-shadow: 5px 5px 6px 3px rgba(0, 0, 0, 0.8);
   margin-top: 1rem;
   margin-bottom: 2rem;
-  width: 50%;
-  height: 7rem;
+  width: 70%;
+  height: 9rem;
 }
 
 .viewButton {
