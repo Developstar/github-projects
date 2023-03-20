@@ -7,13 +7,17 @@
         <p>Frontend Developer</p>
       </div>
       <div class="repoButton">
-        <router-link to="/MyRepos" style="text-decoration: none;"><button class="mrepobtn ">My Repos</button></router-link>
+        <router-link to="/MyRepos" style="text-decoration: none;"><button class="mrepobtn ">Check My Repos</button></router-link>
       </div>
       </div>
 
       <div class="aboutMe">
-        <h2>My Github Repositories</h2>
-        <p>This website showcases my GitHub details and projects in a visually pleasing manner. Discover my latest repositories, contributions, and activities, all in one place.</p>
+        <h2>Altschool Africa third Semester Project</h2>
+        <p>For my third semester exam at AltSchool Africa, I worked on a project that involved utilizing the GitHub API to showcase a comprehensive list of my repositories along with additional information. Additionally, I incorporated a wildcard route to handle error pages.
+
+
+
+</p>
       </div>
 
     </section>
@@ -21,11 +25,12 @@
   
   <style>
 
-  
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
   .pageWrapper {
     margin-top: 2rem;
     text-align: center;
-    background: white;
+    background: #435277;
+    color: white;
     box-shadow: 5px 5px 6px 3px rgba(0, 0, 0, 0.8);
     margin-top: 10vh;
     width: 80vw;
@@ -57,36 +62,44 @@
 
   .heading, .repoButton{
     margin-top: 2rem;
+    font-family: 'Abel', sans-serif;
   }
 
   .aboutMe{
     margin-top: 8rem;
     width: 80%;
     height: 20vh;
-    
+    font-family: 'Abel', sans-serif;
   }
 
   .aboutMe h2{
     margin-bottom: 1rem;
     margin-top: 1rem;
-    
+    font-family: 'Abel', sans-serif;
+  }
+
+  .repoButton button{
+  background: white;
+  color: black ;
+  font-size: 1rem;
+   width: 10rem;
+   border-radius: 1rem;
+   font-family: 'Abel', sans-serif;
+   cursor: pointer;
+  }
+  
+  button:hover{
+    filter:drop-shadow(5px 5px 13px white);
   }
 
 
 
   @media (min-width:320px) and (max-width: 420px){
 
-
-    .pageWrapper {
-    margin-top: 2rem;
-    text-align: center;
-    background: white;
-    box-shadow: 5px 5px 6px 3px rgba(0, 0, 0, 0.8);
-    margin-top: 10vh;
-    width: 80vw;
-    height: 60vh;
-    position: relative;
-  }
+    .heading{
+     
+      margin-left: 4.8rem;
+    }
 
   .aboutMe{
     margin-top: 4rem;
@@ -107,14 +120,18 @@
   }
 
   h4{
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   p{
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 
-
+  .imgWrapper{
+    position: absolute;
+    left: -2rem;
+    top: -2rem;
+  }
     .imgWrapper img{
     width: 6rem;
     height: 6rem;
@@ -124,5 +141,6 @@
   h2{
     font-size: 1rem;
   }
+
   }
   </style>

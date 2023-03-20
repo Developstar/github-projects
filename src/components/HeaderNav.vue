@@ -20,7 +20,7 @@
 <style>
 
 .nav_wrapper{
-  background: #ffffff;
+  background: #2a4383;
   display: flex;
   gap: 50%;
   height: 10vh;
@@ -36,6 +36,26 @@ li{
 .pagelinks{
   display: flex;
   gap: 5rem;
+  font-family: 'Abel', sans-serif;
+}
+
+.pagelinks a{
+  color: white;
+}
+
+.pagelinks a:hover{
+  
+  filter:drop-shadow(5px 5px 13px white);
+}
+
+.logo a{
+  color: white;
+  font-family: 'Abel', sans-serif;
+
+}
+
+.logo:hover{
+  filter:drop-shadow(5px 5px 13px white);
 }
 
 @media (min-width:320px) and (max-width:480px){
