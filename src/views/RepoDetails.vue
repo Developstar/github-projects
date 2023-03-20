@@ -42,6 +42,7 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 .RepoDetailsWrapper {
   border: 1px solid black;
   background: white;
@@ -50,6 +51,7 @@ export default {
   margin-top: 3rem;
   height: 70vh;
   box-shadow: 5px 5px 6px 3px rgba(0, 0, 0, 0.8);
+  font-family: 'Abel', sans-serif;
 }
 
 .title{

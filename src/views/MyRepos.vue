@@ -5,7 +5,7 @@
       <ul class="singleWrapper">
         <li class="repoWrapper" v-for="repo in displayedRepos" :key="repo.id">
           <div class="repoName">
-            <h3>{{ repo.name }}</h3>
+            <h3>Project Name :{{ repo.name }}</h3>
           </div>
 
           <div class="repoDetailsbutton">
@@ -142,12 +142,13 @@ export default {
 </script>
 
 <style>
-
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 
 
 h3 {
   padding: 1rem;
+  font-family: 'Abel', sans-serif;
 }
 
 /* .repoName {
@@ -155,10 +156,12 @@ h3 {
 } */
 .pageTitle{
  margin-top: 1rem;
+ font-family: 'Abel', sans-serif;
 }
 
 .repoWrapper {
-  background: #ffffff;
+  background: #435277;
+  color: white;
   box-shadow: 5px 5px 6px 3px rgba(0, 0, 0, 0.8);
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -183,11 +186,16 @@ h3 {
 
 button {
   padding: 10px;
+  cursor: pointer;
 }
 
 .mrepobtn{
   width: 6rem;
+  border: none;
   border-radius: 4px;
+  background: linear-gradient(  #2a4383 80%,  white);
+  color: white ;
+  font-family: 'Abel', sans-serif;
 }
 
 .repoDetailsbutton a {
